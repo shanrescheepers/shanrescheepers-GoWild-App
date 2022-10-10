@@ -5,7 +5,7 @@
 //  Created by Mac on 2022/10/10.
 //
 
-import SwiftUI
+import SwiftUI //core functionality to build swift frontend
 
 struct ContentView: View {
     var body: some View {
