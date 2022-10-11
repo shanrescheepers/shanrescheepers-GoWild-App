@@ -20,6 +20,9 @@
 		0450972B28F4B0A4005E78E0 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972A28F4B0A4005E78E0 /* FirebaseFunctions */; };
 		0450972D28F4B0A4005E78E0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972C28F4B0A4005E78E0 /* FirebaseStorage */; };
 		045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */; };
+		045DE90228F5F294004F54F1 /* Card1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90128F5F294004F54F1 /* Card1View.swift */; };
+		045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90328F5F2A3004F54F1 /* Card2View.swift */; };
+		045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90528F5F2AE004F54F1 /* Card3View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,10 @@
 		0450971628F49966005E78E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0450971D28F4ABB1005E78E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		045DE90128F5F294004F54F1 /* Card1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1View.swift; sourceTree = "<group>"; };
+		045DE90328F5F2A3004F54F1 /* Card2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2View.swift; sourceTree = "<group>"; };
+		045DE90528F5F2AE004F54F1 /* Card3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3View.swift; sourceTree = "<group>"; };
+		045DE90728F5F613004F54F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +77,9 @@
 		0450970E28F49964005E78E0 /* Leopards-of-the-Greater-Kruger */ = {
 			isa = PBXGroup;
 			children = (
+				045DE90728F5F613004F54F1 /* Info.plist */,
 				045DE90028F5F0A4004F54F1 /* Screens */,
 				045DE8F628F5B1E6004F54F1 /* View */,
-				0450970F28F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift */,
-				0450971128F49964005E78E0 /* ContentView.swift */,
 				0450971328F49966005E78E0 /* Assets.xcassets */,
 				0450971D28F4ABB1005E78E0 /* GoogleService-Info.plist */,
 				0450971528F49966005E78E0 /* Preview Content */,
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */,
+				045DE90128F5F294004F54F1 /* Card1View.swift */,
+				045DE90328F5F2A3004F54F1 /* Card2View.swift */,
+				045DE90528F5F2AE004F54F1 /* Card3View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +116,8 @@
 		045DE90028F5F0A4004F54F1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0450970F28F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift */,
+				0450971128F49964005E78E0 /* ContentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -194,8 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */,
+				045DE90228F5F294004F54F1 /* Card1View.swift in Sources */,
 				0450971228F49964005E78E0 /* ContentView.swift in Sources */,
 				0450971028F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift in Sources */,
+				045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */,
 				045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,9 +343,9 @@
 				DEVELOPMENT_TEAM = A84C98MU3G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Leopards-of-the-Greater-Kruger/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -359,9 +373,9 @@
 				DEVELOPMENT_TEAM = A84C98MU3G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Leopards-of-the-Greater-Kruger/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

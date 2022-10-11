@@ -15,16 +15,21 @@ struct ContentView: View {
 //        cmnd shift l shortcut for library
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
-            Text("Hello, worrld!")
-              SplashScreenView()
-        }
-//        padding(0)
-        VStack {
-//            Color("BackgroundColor")
+            
+            TabView{
+                Card1View()
+                Card2View()
+                Card3View()
+            }.tabViewStyle(.page)
+            Spacer()
             
         }
+//        padding(0)
+        
+       
       
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

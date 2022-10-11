@@ -22,9 +22,10 @@ struct SplashScreenView: View {
                     .frame(height: 20)
                 Text("Everything you need,to spot these iconic leopards in the wild!").multilineTextAlignment(.center).padding(.top, 8.0)
                 Spacer()
-                    .frame(height: 20)
+                    
                 Image("compass").fixedSize()
             }
+           
             
            
           
