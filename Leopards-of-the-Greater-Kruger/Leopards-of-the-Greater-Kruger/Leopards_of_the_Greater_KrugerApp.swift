@@ -7,12 +7,14 @@
 
 import SwiftUI
 import FirebaseCore
+import Firebase
+
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
+//    FirebaseApp.configure()
 
     return true
   }
@@ -20,6 +22,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct Leopards_of_the_Greater_KrugerApp: App {
+    static var isAlreadyLaunchedOnce = false
+    init(){
+        FirebaseApp.configure()
+        
+//        FIRApp.configure()
+    }
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {

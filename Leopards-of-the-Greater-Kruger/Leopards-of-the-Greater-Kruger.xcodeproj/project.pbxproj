@@ -19,6 +19,7 @@
 		0450972928F4B0A4005E78E0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972828F4B0A4005E78E0 /* FirebaseFirestoreSwift */; };
 		0450972B28F4B0A4005E78E0 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972A28F4B0A4005E78E0 /* FirebaseFunctions */; };
 		0450972D28F4B0A4005E78E0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972C28F4B0A4005E78E0 /* FirebaseStorage */; };
+		045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0450971328F49966005E78E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0450971628F49966005E78E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0450971D28F4ABB1005E78E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 		0450970E28F49964005E78E0 /* Leopards-of-the-Greater-Kruger */ = {
 			isa = PBXGroup;
 			children = (
+				045DE90028F5F0A4004F54F1 /* Screens */,
+				045DE8F628F5B1E6004F54F1 /* View */,
 				0450970F28F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift */,
 				0450971128F49964005E78E0 /* ContentView.swift */,
 				0450971328F49966005E78E0 /* Assets.xcassets */,
@@ -90,6 +94,21 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		045DE8F628F5B1E6004F54F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DE90028F5F0A4004F54F1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +196,7 @@
 			files = (
 				0450971228F49964005E78E0 /* ContentView.swift in Sources */,
 				0450971028F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift in Sources */,
+				045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

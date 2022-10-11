@@ -6,16 +6,24 @@
 //
 
 import SwiftUI //core functionality to build swift frontend
-
+import Firebase 
+//firebase storage - make api call - map data you need
+//n view is n fragment wat jy in n screen kan sit
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//        stack is like a div to wrap content in
+//        cmnd shift l shortcut for library
+        ZStack{
+            Color("BackgroundColor")  .ignoresSafeArea()
+            Text("Hello, worrld!")
+              SplashScreenView()
         }
-        .padding()
+//        padding(0)
+        VStack {
+//            Color("BackgroundColor")
+            
+        }
+      
     }
 }
 
