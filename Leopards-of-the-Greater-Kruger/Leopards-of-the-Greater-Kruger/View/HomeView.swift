@@ -14,6 +14,7 @@ struct HomeView: View {
             VStack{
                 Text("Hello, Home")
             }
+            //hierdie maak dat die back button nie gewys word nie
             .navigationBarHidden(true)
         }
        

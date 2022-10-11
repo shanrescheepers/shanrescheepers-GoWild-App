@@ -39,15 +39,11 @@ struct Card3View: View {
                             Spacer()
                         }
                     }
-
-                   
                     VStack{
                         Image("compass").fixedSize()
                     }
                 }
-                
             }
-            
         }
     func goHome() {
         if let window = UIApplication.shared.windows.first {
