@@ -15,25 +15,18 @@ struct ContentView: View {
 //        cmnd shift l shortcut for library
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
-            
-            TabView{
-                Card1View()
-                Card2View()
-                Card3View()
-            }.tabViewStyle(.page)
-            Spacer()
-            
+           OnboardingViewScreens123()
+           
         }
-//        padding(0)
-        
-       
-      
+
     }
     
 }
+    
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }

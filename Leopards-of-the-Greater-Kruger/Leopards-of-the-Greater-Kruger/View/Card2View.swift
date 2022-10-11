@@ -9,12 +9,12 @@ import SwiftUI
 
 struct Card2View: View {
     var body: some View {
-        HStack{
+        VStack{
+            Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
+            Spacer()
             VStack{
-                Text("Card 2")
-                Image("logopng").resizable(resizingMode: .tile).fixedSize().padding(.horizontal, 9.0)
+                Image("compass").fixedSize()
             }
-       
         }
      
     }
