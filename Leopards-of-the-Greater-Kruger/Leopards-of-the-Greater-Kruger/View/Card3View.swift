@@ -15,7 +15,7 @@ struct Card3View: View {
                 Color("BackgroundColor")
                     .ignoresSafeArea()
                 VStack{
-                    Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
+                  
 //                    NavigationStack(path: $path) {
 //                        Button {
 //                            path.append("HomeView")
@@ -39,9 +39,7 @@ struct Card3View: View {
                             Spacer()
                         }
                     }
-                    VStack{
-                        Image("compass").fixedSize()
-                    }
+                   
                 }
             }
         }

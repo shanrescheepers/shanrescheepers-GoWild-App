@@ -11,8 +11,6 @@ struct Card1View: View {
     var body: some View {
       
             VStack{
-              
-                Image("logopng").resizable().frame(width:32, height: 25).padding(.horizontal, 9.0)
                 Spacer()
                 VStack(alignment: .center){
                     ZStack{
@@ -39,9 +37,7 @@ struct Card1View: View {
 //                    Text("Get to know the famous iconic leopards of the Timbavati and Klaserie Private Nature Reserves")
                 }
                 Spacer()
-                VStack{
-                    Image("compass").fixedSize()
-                }
+             
             }
        
         

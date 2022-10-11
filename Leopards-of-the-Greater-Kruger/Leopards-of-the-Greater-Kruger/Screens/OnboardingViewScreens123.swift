@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboardingViewScreens123: View {
     var body: some View {
         VStack{
-            
+            Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
             TabView{
                 Card1View()
                 Card2View()
@@ -18,7 +18,9 @@ struct OnboardingViewScreens123: View {
             }.tabViewStyle(.page)
             Spacer()
            
-            
+            VStack{
+                Image("compass").fixedSize()
+            }
         }
     }
 }

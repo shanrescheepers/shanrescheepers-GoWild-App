@@ -10,11 +10,7 @@ import SwiftUI
 struct Card2View: View {
     var body: some View {
         VStack{
-            Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
-            Spacer()
-            VStack{
-                Image("compass").fixedSize()
-            }
+        
         }
      
     }
