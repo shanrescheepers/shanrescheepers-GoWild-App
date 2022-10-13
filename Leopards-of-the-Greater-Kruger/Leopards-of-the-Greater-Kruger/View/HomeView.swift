@@ -10,25 +10,36 @@ import SwiftUI
 struct HomeView: View {
     @State private var path = NavigationPath()
     @State var searchText = ""
-    
+    @State var isLinkActive = false
     var body: some View {
         ZStack{
-        
+          
             Color("BackgroundColor")  .ignoresSafeArea()
 //
             VStack{
                 Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
                 VStack{
                     Image(systemName: "square.grid.2x2.fill")
-                       
+                    
+                    
                 } .padding(.leading, 5.0)
-//                NavigationView{
-//                          Text("Search")
-//                      }
+                
+                
+               
+            
+                
 //                .searchable(text: $search).frame(width: 250, height: 40)   .clipShape(RoundedRectangle(cornerRadius: 15)).foregroundColor(Color("NavIconsColor"))
                 
                 SearchBarView()
-                
+//                VStack{
+//                    Button(action: goToLibrary){
+//
+//                    }
+//                        NavigationLink(destination: LeopardLibrary(), isActive: $isLinkActive) {
+//                            EmptyView()
+//                        }
+//                            .hidden()
+//                }
                 VStack{
                     
                     VStack{
@@ -79,6 +90,7 @@ struct HomeView: View {
                 }
           
             }
+        
             //hierdie maak dat die back button nie gewys word nie
 //            .navigationBarHidden(false)
         }
