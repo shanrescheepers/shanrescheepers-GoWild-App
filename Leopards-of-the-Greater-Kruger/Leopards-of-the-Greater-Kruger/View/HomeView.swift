@@ -32,8 +32,7 @@ struct HomeView: View {
                 VStack{
                     
                     VStack{
-                        Button(action: goToLibrary)
-                        {
+                        Button(action: goToLibrary){
                             Text("LEOPARD LIBRARY").frame(width: 200, height: 50, alignment: .center)
                         }
                         .background(Color("SecondaryButtonColor"))
@@ -47,9 +46,7 @@ struct HomeView: View {
                        
                     }.padding(.vertical, 4.0)
                     VStack{
-                        Button(action:goToIDKit)
-                            
-                         {
+                        Button(action:goToIDKit){
                             Text("ID KIT TUTORIAL").frame(width: 200, height: 50, alignment: .center)
                         }
                         .background(Color("SecondaryButtonColor"))
