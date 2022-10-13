@@ -15,6 +15,7 @@ struct OnboardingViewScreens123: View {
                 Card1View()
                 Card2View()
                 Card3View()
+               
             }.tabViewStyle(.page)
             Spacer()
            

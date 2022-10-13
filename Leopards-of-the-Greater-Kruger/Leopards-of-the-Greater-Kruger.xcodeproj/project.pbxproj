@@ -25,6 +25,9 @@
 		045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90528F5F2AE004F54F1 /* Card3View.swift */; };
 		045DE90A28F608E0004F54F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90928F608E0004F54F1 /* HomeView.swift */; };
 		045DE90C28F61C55004F54F1 /* OnboardingViewScreens123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90B28F61C55004F54F1 /* OnboardingViewScreens123.swift */; };
+		0469E42328F741260045FC73 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42228F741260045FC73 /* SearchBarView.swift */; };
+		0469E42528F787980045FC73 /* LeopardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42428F787980045FC73 /* LeopardLibrary.swift */; };
+		0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42B28F7936D0045FC73 /* IDkitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		045DE90728F5F613004F54F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		045DE90928F608E0004F54F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		045DE90B28F61C55004F54F1 /* OnboardingViewScreens123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewScreens123.swift; sourceTree = "<group>"; };
+		0469E42228F741260045FC73 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		0469E42428F787980045FC73 /* LeopardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardLibrary.swift; sourceTree = "<group>"; };
+		0469E42B28F7936D0045FC73 /* IDkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDkitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		0450970E28F49964005E78E0 /* Leopards-of-the-Greater-Kruger */ = {
 			isa = PBXGroup;
 			children = (
+				0469E42628F78DD70045FC73 /* CustomNavBar */,
+				0469E42128F7410A0045FC73 /* Components */,
 				045DE90728F5F613004F54F1 /* Info.plist */,
 				045DE90028F5F0A4004F54F1 /* Screens */,
 				045DE8F628F5B1E6004F54F1 /* View */,
@@ -114,6 +122,8 @@
 				045DE90328F5F2A3004F54F1 /* Card2View.swift */,
 				045DE90528F5F2AE004F54F1 /* Card3View.swift */,
 				045DE90928F608E0004F54F1 /* HomeView.swift */,
+				0469E42428F787980045FC73 /* LeopardLibrary.swift */,
+				0469E42B28F7936D0045FC73 /* IDkitView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +136,21 @@
 				045DE90B28F61C55004F54F1 /* OnboardingViewScreens123.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		0469E42128F7410A0045FC73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0469E42228F741260045FC73 /* SearchBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0469E42628F78DD70045FC73 /* CustomNavBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomNavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */,
 				045DE90C28F61C55004F54F1 /* OnboardingViewScreens123.swift in Sources */,
+				0469E42328F741260045FC73 /* SearchBarView.swift in Sources */,
 				045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */,
 				045DE90A28F608E0004F54F1 /* HomeView.swift in Sources */,
 				045DE90228F5F294004F54F1 /* Card1View.swift in Sources */,
@@ -219,6 +246,7 @@
 				0450971028F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift in Sources */,
 				045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */,
 				045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */,
+				0469E42528F787980045FC73 /* LeopardLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

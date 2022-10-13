@@ -33,6 +33,7 @@ struct Leopards_of_the_Greater_KrugerApp: App {
         WindowGroup {
 //            NavigationView{
             ContentView()
+           
 //            }
         }
     }

@@ -16,13 +16,14 @@ struct ContentView: View {
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
            OnboardingViewScreens123()
+                .navigationBarHidden(false)
            
         }
-
+    
     }
     
 }
-    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

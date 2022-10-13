@@ -16,7 +16,7 @@ struct Card1View: View {
                     ZStack{
                         Image("saseka").resizable().aspectRatio(contentMode: .fit)
 
-                    }
+                    }.padding(.horizontal, 5.0)//zstack
                     Button(action: {
                         //doa ction
                         print("SASEKA PRESSED")
@@ -29,19 +29,13 @@ struct Card1View: View {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
 //                    Button("SASEKA"){
 //                        print("Button tapped")
-//
-//
-//
 //                    }.background(Color("SecondaryButtonColor")).padding(4).clipShape(RoundedRectangle(cornerRadius: 15)).foregroundColor(Color("SecondaryTextColor"))
 //
 //                    Text("Get to know the famous iconic leopards of the Timbavati and Klaserie Private Nature Reserves")
-                }
+                }//vstack
                 Spacer()
-             
             }
-       
-        
-     
+//        func
     }
 }
 
