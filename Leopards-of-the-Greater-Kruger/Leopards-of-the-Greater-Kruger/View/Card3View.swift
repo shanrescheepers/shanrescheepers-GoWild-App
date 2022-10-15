@@ -43,33 +43,17 @@ struct Card3View: View {
         }
     func goHome() {
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: HomeView())
+            window.rootViewController = UIHostingController(rootView: MasterView())
             window.makeKeyAndVisible()
         }
     }
 }
 //VStack{
 //    Image("compass").fixedSize()
-//}
+
 
 struct Card3View_Previews: PreviewProvider {
     static var previews: some View {
         Card3View()
     }
 }
-
-//                    NavigationStack(path: $path) {
-//                        Button {
-//                            path.append("HomeView")
-//
-//                        } label: {
-//                            Text("CLICK HERE TO START").frame(width: 100, height: 10)
-//                        }
-//
-//                        .navigationDestination(for: String.self) { view in HomeView()
-//                            if view == "HomeView" {
-//
-//                            }
-//                        }
-//                        .frame(width: 100, height: 10)
-//                    }

@@ -16,10 +16,12 @@ struct ContentView: View {
 //        cmnd shift l shortcut for library
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
+            
            OnboardingViewScreens123()
                 .navigationBarHidden(false)
-           
+
         }
+        
     
     }
     

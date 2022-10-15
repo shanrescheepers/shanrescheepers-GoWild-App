@@ -30,6 +30,7 @@
 		0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42B28F7936D0045FC73 /* IDkitView.swift */; };
 		04E54F5E28FAF967005F54DB /* LeopardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F5D28FAF967005F54DB /* LeopardData.swift */; };
 		04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F6128FAFA42005F54DB /* LeopardSchema.swift */; };
+		04E54F6428FB339B005F54DB /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F6328FB339B005F54DB /* MasterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		0469E42B28F7936D0045FC73 /* IDkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDkitView.swift; sourceTree = "<group>"; };
 		04E54F5D28FAF967005F54DB /* LeopardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardData.swift; sourceTree = "<group>"; };
 		04E54F6128FAFA42005F54DB /* LeopardSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardSchema.swift; sourceTree = "<group>"; };
+		04E54F6328FB339B005F54DB /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				045DE90928F608E0004F54F1 /* HomeView.swift */,
 				0469E42428F787980045FC73 /* LeopardLibrary.swift */,
 				0469E42B28F7936D0045FC73 /* IDkitView.swift */,
+				04E54F6328FB339B005F54DB /* MasterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */,
 				0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */,
+				04E54F6428FB339B005F54DB /* MasterView.swift in Sources */,
 				045DE90C28F61C55004F54F1 /* OnboardingViewScreens123.swift in Sources */,
 				0469E42328F741260045FC73 /* SearchBarView.swift in Sources */,
 				045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */,
