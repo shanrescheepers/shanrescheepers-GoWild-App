@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HomeView: View {
+    @StateObject var leopardData = LeopardData()
     @State private var path = NavigationPath()
     @State var searchText = ""
     @State var isLinkActive = false
@@ -40,16 +42,26 @@ struct HomeView: View {
 //                        }
 //                            .hidden()
 //                }
+//                Button(action: {}) {
+//                    HStack {
+//                        Image(systemName: "gift")
+//                        Text("Send")
+//                    }
+//                }
                 VStack{
                     
                     VStack{
                         Button(action: goToLibrary){
-                            Text("LEOPARD LIBRARY").frame(width: 200, height: 50, alignment: .center)
+                            HStack{
+                                Image("blackleopardicon").padding(5)
+                                Text("LEOPARD LIBRARY").frame(width: 200, height: 50, alignment: .leading).padding(.leading, 4.0)
+                            }
+                            .frame(width: 300, height: 80)
                         }
-                        .background(Color("SecondaryButtonColor"))
-                        .foregroundColor(Color("SecondaryTextColor"))
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-         
+                        .background(Color("MainButtonColor"))
+                        .foregroundColor(Color(.black))
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+        
                         Text("Our iconic leopards can be found in the Greater Kruger. Learn more about our library of iconic leopards to be found on your safaris!")
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
@@ -58,11 +70,15 @@ struct HomeView: View {
                     }.padding(.vertical, 4.0)
                     VStack{
                         Button(action:goToIDKit){
-                            Text("ID KIT TUTORIAL").frame(width: 200, height: 50, alignment: .center)
+                            HStack{
+                                Image("binos").padding(5)
+                                Text("ID KIT TUTORIAL").frame(width: 200, height: 50, alignment: .leading).padding(.leading, 11.0)
+                            }
+                            .frame(width: 300, height: 80)
                         }
-                        .background(Color("SecondaryButtonColor"))
-                        .foregroundColor(Color("SecondaryTextColor"))
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                        .background(Color("MainButtonColor"))
+                        .foregroundColor(Color(.black))
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
                         
                         Text("See our library on how to identify each leopard using our image identification kit.")
                             .multilineTextAlignment(.center)
@@ -74,12 +90,16 @@ struct HomeView: View {
                             print("Location PRESSED")
                             
                         }) {
-                            Text("LEOPARD LOCATIONS").frame(width: 200, height: 50, alignment: .center)
+                            HStack{
+                                Image("blackmap").padding(5)
+                                Text("LEOPARD LOCATIONS").frame(width: 200, height: 50).padding(.leading, 4.0)
+                            }
+                            .frame(width: 300, height: 80)
                         }
-                        .background(Color("SecondaryButtonColor"))
-                        .foregroundColor(Color("SecondaryTextColor"))
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-                        
+                        .background(Color("MainButtonColor"))
+                        .foregroundColor(Color(.black))
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                      
                         Text("See our guide to find out where you can spot these iconic leopards with tips on how and where to spot them!")
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
@@ -98,7 +118,7 @@ struct HomeView: View {
     }
     func goToLibrary() {
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: LeopardLibrary())
+            window.rootViewController = UIHostingController(rootView: LeopardLibrary().environmentObject(leopardData))
             window.makeKeyAndVisible()
         }
     }
@@ -113,5 +133,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    
+            
     }
 }

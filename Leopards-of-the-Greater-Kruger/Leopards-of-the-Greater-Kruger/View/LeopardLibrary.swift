@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LeopardLibrary: View {
+    
+    @EnvironmentObject var leopardData: LeopardData
+    
+    
     var body: some View {
         
         
@@ -18,6 +22,15 @@ struct LeopardLibrary: View {
                 Spacer()
                 VStack{
                     VStack{
+                        List(leopardData.leopards, id: \.id){ leopard in Text(leopard.name)
+                            
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
                         Button(action: goHome){
                             Text("Back Home").frame(width: 200, height: 50, alignment: .center)
                         }
@@ -40,5 +53,6 @@ struct LeopardLibrary: View {
 struct LeopardLibrary_Previews: PreviewProvider {
     static var previews: some View {
         LeopardLibrary()
+        
     }
 }

@@ -22,6 +22,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct Leopards_of_the_Greater_KrugerApp: App {
+   
+    
     static var isAlreadyLaunchedOnce = false
     init(){
         FirebaseApp.configure()
@@ -33,8 +35,7 @@ struct Leopards_of_the_Greater_KrugerApp: App {
         WindowGroup {
 //            NavigationView{
             ContentView()
-           
-//            }
+         
         }
     }
 }

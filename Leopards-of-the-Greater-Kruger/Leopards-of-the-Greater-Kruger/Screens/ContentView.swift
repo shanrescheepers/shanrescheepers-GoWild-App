@@ -6,7 +6,8 @@
 //
 
 import SwiftUI //core functionality to build swift frontend
-import Firebase 
+import Firebase
+//appstorage
 //firebase storage - make api call - map data you need
 //n view is n fragment wat jy in n screen kan sit
 struct ContentView: View {

@@ -39,8 +39,6 @@ struct Card3View: View {
                             }
                         }
                         }.padding(.top, 10.0)
-                   
-                
             }
         }
     func goHome() {

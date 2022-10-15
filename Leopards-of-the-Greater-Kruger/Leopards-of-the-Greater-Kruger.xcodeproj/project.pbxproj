@@ -28,6 +28,8 @@
 		0469E42328F741260045FC73 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42228F741260045FC73 /* SearchBarView.swift */; };
 		0469E42528F787980045FC73 /* LeopardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42428F787980045FC73 /* LeopardLibrary.swift */; };
 		0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469E42B28F7936D0045FC73 /* IDkitView.swift */; };
+		04E54F5E28FAF967005F54DB /* LeopardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F5D28FAF967005F54DB /* LeopardData.swift */; };
+		04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F6128FAFA42005F54DB /* LeopardSchema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,11 +44,13 @@
 		045DE90328F5F2A3004F54F1 /* Card2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2View.swift; sourceTree = "<group>"; };
 		045DE90528F5F2AE004F54F1 /* Card3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3View.swift; sourceTree = "<group>"; };
 		045DE90728F5F613004F54F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		045DE90928F608E0004F54F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		045DE90928F608E0004F54F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		045DE90B28F61C55004F54F1 /* OnboardingViewScreens123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewScreens123.swift; sourceTree = "<group>"; };
 		0469E42228F741260045FC73 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0469E42428F787980045FC73 /* LeopardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardLibrary.swift; sourceTree = "<group>"; };
 		0469E42B28F7936D0045FC73 /* IDkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDkitView.swift; sourceTree = "<group>"; };
+		04E54F5D28FAF967005F54DB /* LeopardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardData.swift; sourceTree = "<group>"; };
+		04E54F6128FAFA42005F54DB /* LeopardSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardSchema.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		0450970E28F49964005E78E0 /* Leopards-of-the-Greater-Kruger */ = {
 			isa = PBXGroup;
 			children = (
+				04E54F5F28FAFA1C005F54DB /* Leopard Schema */,
+				04E54F5C28FAF93D005F54DB /* Firebase Service */,
 				0469E42628F78DD70045FC73 /* CustomNavBar */,
 				0469E42128F7410A0045FC73 /* Components */,
 				045DE90728F5F613004F54F1 /* Info.plist */,
@@ -151,6 +157,22 @@
 			children = (
 			);
 			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
+		04E54F5C28FAF93D005F54DB /* Firebase Service */ = {
+			isa = PBXGroup;
+			children = (
+				04E54F5D28FAF967005F54DB /* LeopardData.swift */,
+			);
+			path = "Firebase Service";
+			sourceTree = "<group>";
+		};
+		04E54F5F28FAFA1C005F54DB /* Leopard Schema */ = {
+			isa = PBXGroup;
+			children = (
+				04E54F6128FAFA42005F54DB /* LeopardSchema.swift */,
+			);
+			path = "Leopard Schema";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,12 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */,
 				0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */,
 				045DE90C28F61C55004F54F1 /* OnboardingViewScreens123.swift in Sources */,
 				0469E42328F741260045FC73 /* SearchBarView.swift in Sources */,
 				045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */,
 				045DE90A28F608E0004F54F1 /* HomeView.swift in Sources */,
 				045DE90228F5F294004F54F1 /* Card1View.swift in Sources */,
+				04E54F5E28FAF967005F54DB /* LeopardData.swift in Sources */,
 				0450971228F49964005E78E0 /* ContentView.swift in Sources */,
 				0450971028F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift in Sources */,
 				045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */,
