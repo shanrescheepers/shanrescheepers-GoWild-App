@@ -31,6 +31,9 @@
 		04E54F5E28FAF967005F54DB /* LeopardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F5D28FAF967005F54DB /* LeopardData.swift */; };
 		04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F6128FAFA42005F54DB /* LeopardSchema.swift */; };
 		04E54F6428FB339B005F54DB /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54F6328FB339B005F54DB /* MasterView.swift */; };
+		04EBE6BA28FB8A7400081076 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6B928FB8A7400081076 /* MapScreen.swift */; };
+		04EBE6BC28FB8AA700081076 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6BB28FB8AA700081076 /* SettingsScreen.swift */; };
+		04EBE6BE28FB925A00081076 /* LeopardLibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6BD28FB925A00081076 /* LeopardLibraryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		04E54F5D28FAF967005F54DB /* LeopardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardData.swift; sourceTree = "<group>"; };
 		04E54F6128FAFA42005F54DB /* LeopardSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardSchema.swift; sourceTree = "<group>"; };
 		04E54F6328FB339B005F54DB /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		04EBE6B928FB8A7400081076 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		04EBE6BB28FB8AA700081076 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		04EBE6BD28FB925A00081076 /* LeopardLibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardLibraryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 				0450970F28F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift */,
 				0450971128F49964005E78E0 /* ContentView.swift */,
 				045DE90B28F61C55004F54F1 /* OnboardingViewScreens123.swift */,
+				04EBE6B928FB8A7400081076 /* MapScreen.swift */,
+				04EBE6BB28FB8AA700081076 /* SettingsScreen.swift */,
+				04EBE6BD28FB925A00081076 /* LeopardLibraryScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EBE6BC28FB8AA700081076 /* SettingsScreen.swift in Sources */,
 				04E54F6228FAFA42005F54DB /* LeopardSchema.swift in Sources */,
 				0469E42C28F7936D0045FC73 /* IDkitView.swift in Sources */,
 				04E54F6428FB339B005F54DB /* MasterView.swift in Sources */,
@@ -270,9 +280,11 @@
 				045DE90A28F608E0004F54F1 /* HomeView.swift in Sources */,
 				045DE90228F5F294004F54F1 /* Card1View.swift in Sources */,
 				04E54F5E28FAF967005F54DB /* LeopardData.swift in Sources */,
+				04EBE6BA28FB8A7400081076 /* MapScreen.swift in Sources */,
 				0450971228F49964005E78E0 /* ContentView.swift in Sources */,
 				0450971028F49964005E78E0 /* Leopards_of_the_Greater_KrugerApp.swift in Sources */,
 				045DE90628F5F2AE004F54F1 /* Card3View.swift in Sources */,
+				04EBE6BE28FB925A00081076 /* LeopardLibraryScreen.swift in Sources */,
 				045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */,
 				0469E42528F787980045FC73 /* LeopardLibrary.swift in Sources */,
 			);

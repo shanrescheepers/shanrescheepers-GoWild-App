@@ -12,7 +12,7 @@ struct IDkitView: View {
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
             VStack{
-                Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
+                Image("logopng").resizable().padding(.top, -50.0).frame(width:62, height: 15)
                 Spacer()
                 VStack{
                     VStack{

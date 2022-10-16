@@ -8,15 +8,32 @@
 import SwiftUI
 
 struct MasterView: View {
+    @StateObject var leopardData = LeopardData()
     var body: some View {
+        
         
         TabView{
             HomeView()
                 .tabItem{
-                    Image(systemName: "house")
+                    Image("tabhome")
                     Text("Home")
                 }
-        }
+            LeopardLibraryScreen()
+                .tabItem{
+                    Image("tableopard")
+                    Text("Library")
+                }
+            MapScreen()
+                .tabItem{
+                    Image("tabmap")
+                    Text("Live Map")
+                }
+            SettingsScreen()
+                .tabItem{
+                    Image("tabsetting")
+                    Text("Settings")
+                }
+        }.background(Color("BackgroundColor"))
     }
 }
 

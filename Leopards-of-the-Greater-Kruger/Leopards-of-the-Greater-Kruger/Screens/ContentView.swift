@@ -11,18 +11,25 @@ import Firebase
 //firebase storage - make api call - map data you need
 //n view is n fragment wat jy in n screen kan sit
 struct ContentView: View {
+    
+    @AppStorage("onboardingComplete") var onboardingComplete =  false
+    
     var body: some View {
 //        stack is like a div to wrap content in
 //        cmnd shift l shortcut for library
-        ZStack{
-            Color("BackgroundColor")  .ignoresSafeArea()
-            
-           OnboardingViewScreens123()
-                .navigationBarHidden(false)
-
-        }
         
-    
+        
+        if(onboardingComplete){
+            MasterView()
+        } else {
+            ZStack{
+                Color("BackgroundColor")  .ignoresSafeArea()
+                
+               OnboardingViewScreens123()
+                    .navigationBarHidden(false)
+
+            }
+        }
     }
     
 }

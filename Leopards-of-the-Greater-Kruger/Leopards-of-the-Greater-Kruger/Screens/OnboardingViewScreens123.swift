@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+//ref to appstorage onboarding
 
 struct OnboardingViewScreens123: View {
+    @AppStorage("onboardingComplete") var onboardingComplete = false
     var body: some View {
         VStack{
             Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
@@ -18,6 +20,9 @@ struct OnboardingViewScreens123: View {
                
             }.tabViewStyle(.page)
             Spacer()
+       
+//                TODO - set onboard complete
+           
            
             VStack{
                 Image("compass").fixedSize()

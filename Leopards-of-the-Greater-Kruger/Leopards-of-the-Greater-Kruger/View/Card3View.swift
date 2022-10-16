@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Card3View: View {
     @State private var path = NavigationPath()
-
+    @AppStorage("onboardingComplete") var onboardingComplete =  false
         var body: some View {
                 VStack{
                     VStack(alignment: .center){
@@ -32,7 +32,8 @@ struct Card3View: View {
                             Button(action: goHome) {
                                 HStack(alignment: .center) {
                                     Spacer()
-                                    Text("START").foregroundColor(Color.black).bold()
+                                    
+                                    Text("Get Started").foregroundColor(Color.black).bold()
                                         .clipShape(RoundedRectangle(cornerRadius: 15))
                                     Spacer()
                                 }
@@ -45,6 +46,7 @@ struct Card3View: View {
         if let window = UIApplication.shared.windows.first {
             window.rootViewController = UIHostingController(rootView: MasterView())
             window.makeKeyAndVisible()
+            onboardingComplete = true
         }
     }
 }

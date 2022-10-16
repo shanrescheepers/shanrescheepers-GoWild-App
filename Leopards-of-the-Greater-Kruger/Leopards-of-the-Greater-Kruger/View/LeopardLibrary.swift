@@ -10,35 +10,27 @@ import SwiftUI
 struct LeopardLibrary: View {
     
     @EnvironmentObject var leopardData: LeopardData
- 
     
     var body: some View {
-        
+      
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
-            
             VStack{
-                Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
-                
-//                Spacer()
+                Image("logopng").resizable().padding(.top, -50.0).frame(width:62, height: 18)
                 VStack{
-
+                 
                
                     List(leopardData.leopards, id: \.id){
-                      
                             leopard in Text(leopard.name) }
                         }.scrollContentBackground(.hidden)
 //                        .background(Color("BackgroundColor"))
-                    
-                    VStack{
-                        Button(action: goHome){
-                            Text("Back Home").frame(width: 200, height: 50, alignment: .center)
-                        }
-                        .background(Color("SecondaryButtonColor"))
-                        .foregroundColor(Color("SecondaryTextColor"))
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-                    }.padding(.vertical, 4.0)
+                
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 15)], spacing: 15){
+                    ForEach(leopardData.leopards) { leopard in Text(leopard.name)}
                 }
+            
+                }
+          
             }
         }
     }
