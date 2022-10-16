@@ -30,7 +30,7 @@ struct MasterView: View {
                 }
             SettingsScreen()
                 .tabItem{
-                    Image("tabsetting")
+                    Image("tabsettings")
                     Text("Settings")
                 }
         }.background(Color("BackgroundColor"))
