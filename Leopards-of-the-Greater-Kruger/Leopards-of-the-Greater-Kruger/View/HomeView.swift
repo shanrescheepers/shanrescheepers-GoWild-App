@@ -17,7 +17,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Image("logopng").resizable().frame(width:62, height: 62).padding(.top, -7.0)
+                Image("newlogo").resizable().frame(width:62, height: 62).padding(.top, -7.0)
                 VStack{
                     NavigationLink{
                         LeopardLibrary().environmentObject(leopardData)
