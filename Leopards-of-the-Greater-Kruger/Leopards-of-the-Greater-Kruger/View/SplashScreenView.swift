@@ -17,7 +17,7 @@ struct SplashScreenView: View {
             Color("BackgroundColor")  .ignoresSafeArea()
             
             VStack(alignment: .center){
-                Image("leopardslogo").resizable(resizingMode: .tile).fixedSize().padding(.horizontal, 9.0)
+                Image("Splash").resizable(resizingMode: .tile).fixedSize().padding(.horizontal, 9.0)
                 Spacer()
                     .frame(height: 20)
                 Text("Everything you need,to spot these iconic leopards in the wild!").multilineTextAlignment(.center).padding(.top, 8.0)
