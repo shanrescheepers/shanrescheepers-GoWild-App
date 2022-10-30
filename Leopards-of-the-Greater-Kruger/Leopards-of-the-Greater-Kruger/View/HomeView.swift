@@ -10,7 +10,7 @@ import Firebase
 
 struct HomeView: View {
     
-    @StateObject var leopardData = LeopardData()
+    @StateObject var animalData = AnimalData()
     @State private var path = NavigationPath()
     @State var searchText = ""
     @State var isLinkActive = false
@@ -20,21 +20,21 @@ struct HomeView: View {
                 Image("newlogo").resizable().frame(width:62, height: 62).padding(.top, -7.0)
                 VStack{
                     NavigationLink{
-                        LeopardLibrary().environmentObject(leopardData)
+                        LeopardLibrary().environmentObject(animalData)
                     }label: {
                         VStack{
                             VStack{
                                 HStack{
-                                    Image("leopardblack").padding(.leading, 10.0)
-                                    Text("LEOPARD LIBRARY").multilineTextAlignment(.leading)
-                                        .frame(width: 180, height: 40).padding()
+                                    Image("libraryiconblack").padding(.leading, 10.0)
+                                    Text("ANIMAL LIBRARY").multilineTextAlignment(.leading)
+                                        .frame(width: 200, height: 40).padding()
                                 }
                             }
                             .background(Color("MainButtonColor"))
                             .clipShape(RoundedRectangle(cornerRadius: 25))
-                            .frame(width: 290, height: 80).padding()
+                            .frame(width: 350, height: 80).padding()
                             
-                            Text("Our iconic leopards can be found in the Greater Kruger. Learn more about our library of iconic leopards to be found on your safaris!")
+                            Text("Learn more about our library of iconic animals to be found on your safaris!")
                                 .multilineTextAlignment(.center).padding()
                         }  .foregroundColor(Color(.black))
                             .multilineTextAlignment(.center)
@@ -49,8 +49,8 @@ struct HomeView: View {
                         VStack{
                             VStack{
                                 HStack{
-                                    Image("binos").padding(.leading, 10.0)
-                                    Text("STEP BY STEP ID KIT")
+                                    Image("photographyiconblack").padding(.leading, 10.0)
+                                    Text("PHOTOGRAPHY TIPS")
                                         .frame(width: 200, height: 40).padding()
                                 }
                             }
@@ -58,7 +58,7 @@ struct HomeView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 25))
                             .frame(width: 320, height: 80).padding()
                             
-                            Text("See our library on how to identify each leopard using our image identification kit.")
+                            Text("For the best safari photographs, use our photography safari kit on your next adventure.")
                         }  .foregroundColor(Color(.black))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
@@ -73,7 +73,7 @@ struct HomeView: View {
                             VStack{
                                 HStack{
                                     Image("blackmap").padding(.leading, 10.0)
-                                    Text("LEOPARD LOCATIONS ").multilineTextAlignment(.leading)
+                                    Text("HABITAT MAP ").multilineTextAlignment(.leading)
                                         .frame(width: 200, height: 40).padding()
                                 }
                             }
@@ -81,7 +81,7 @@ struct HomeView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 25))
                             .frame(width: 300, height: 80).padding()
                             
-                            Text("See our guide to find out where you can spot these iconic leopards with tips on how and where to spot them!")
+                            Text("See our guide to find out where you can spot these iconic animals!")
                         }  .foregroundColor(Color(.black))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)

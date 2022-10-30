@@ -14,11 +14,10 @@ struct SearchBarView: View {
         HStack{
             Image(systemName: "magnifyingglass")
                 .foregroundColor(
-                    searchText.isEmpty ? Color(.white) : Color(.white)
+                    searchText.isEmpty ? (Color.white) : (Color.white)
                 )
-            TextField("Search Leopard or Location...", text: $searchText)
-//                .foregroundColor(Color(.white))
-                .foregroundColor(.white)
+            TextField("Search Animal...", text: $searchText)
+                .foregroundColor(Color(.white))
                 .overlay(
                     Image(systemName: "xmark.circle.fill")
                         .padding()
@@ -28,10 +27,10 @@ struct SearchBarView: View {
                     
                         .onTapGesture {
                             searchText = ""
-                        }
+                        }.accentColor(.white)
                     ,alignment: .trailing
                 )
-        }
+        }.accentColor(.white).foregroundColor(.white)
         .font(.headline)
         .padding()
         .background(RoundedRectangle(cornerRadius: 25)

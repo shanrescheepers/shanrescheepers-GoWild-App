@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MasterView: View {
-    @StateObject var leopardData = LeopardData()
+//    @StateObject var leopardData = LeopardData()
     var body: some View {
         
         
@@ -20,13 +20,13 @@ struct MasterView: View {
                 }
             LeopardLibraryScreen()
                 .tabItem{
-                    Image("tableopard")
-                    Text("Library")
+                    Image("libraryicon")
+                    Text("Animal Library")
                 }
             MapScreen()
                 .tabItem{
-                    Image("tabmap")
-                    Text("Live Map")
+                    Image("photographyicon")
+                    Text("Camera Tips")
                 }
             SettingsScreen()
                 .tabItem{

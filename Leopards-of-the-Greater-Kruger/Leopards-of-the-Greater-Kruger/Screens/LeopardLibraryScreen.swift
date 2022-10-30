@@ -10,13 +10,13 @@ import Firebase
 
 
 struct LeopardLibraryScreen: View {
-    @StateObject var leopardData = LeopardData()
+    @StateObject var animalData = AnimalData()
     
     var body: some View {
 
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
-            LeopardLibrary().environmentObject(leopardData).padding(.top, 43.0)
+            LeopardLibrary().environmentObject(animalData).padding(.top, 43.0)
         }
     }
 }
