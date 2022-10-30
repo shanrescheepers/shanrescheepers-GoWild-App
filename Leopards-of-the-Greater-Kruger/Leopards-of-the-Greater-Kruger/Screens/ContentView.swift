@@ -15,21 +15,23 @@ struct ContentView: View {
     
     @AppStorage("onboardingComplete") var onboardingComplete =  false
     @State var audioPlayer: AVAudioPlayer!
-    @AppStorage("music") var music =  false
+    @AppStorage("music") private var music =  false
     var body: some View {
 //        stack is like a div to wrap content in
 //        cmnd shift l shortcut for library
         
        
-        if(onboardingComplete){
-            MasterView().onAppear {
+        if(!onboardingComplete){
+//
+            
+            MasterView( audioPlayer: $audioPlayer).onAppear {
                             let sound = Bundle.main.path(forResource: "africa", ofType: "mp3")
                             self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-                if music{
-                    self.audioPlayer.play()
-                }else{
-                    self.audioPlayer.pause()
-                }
+                            if music{
+                              self.audioPlayer.play()
+                          }else{
+                              self.audioPlayer.stop()
+                         }
                         }
           
         } else {
@@ -49,7 +51,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+//        ContentView(, audioPlayer: <#Binding<AVAudioPlayer>#>)
+        VStack{
+            Text("Bo")
+        }
         
     }
 }

@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
-
+import AVKit
 struct MasterView: View {
 //    @StateObject var leopardData = LeopardData()
+    @AppStorage("onboardingComplete") var onboardingComplete =  false
     @StateObject var photoData = PhotographyData()
+    @AppStorage("music") private var music =  false
+    @Binding var audioPlayer: AVAudioPlayer!
     var body: some View {
         
         
@@ -24,12 +27,14 @@ struct MasterView: View {
                     Image("libraryicon")
                     Text("Animal Library")
                 }
-            MapScreen().environmentObject(photoData)
+            MapScreen()
+               
+                .environmentObject(photoData)
                 .tabItem{
                     Image("photographyicon")
                     Text("Camera Tips")
                 }
-            SettingsScreen()
+            SettingsScreen(audioPlayer: $audioPlayer, music: $music, onboardingComplete: $onboardingComplete)
                 .tabItem{
                     Image("tabsettings")
                     Text("Settings")
@@ -40,6 +45,9 @@ struct MasterView: View {
 
 struct MasterView_Previews: PreviewProvider {
     static var previews: some View {
-        MasterView()
+//        MasterView()
+        VStack{
+            Text("Bo")
+        }
     }
 }

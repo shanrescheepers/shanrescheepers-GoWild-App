@@ -18,7 +18,7 @@ struct LeopardLibrary: View {
     
     @EnvironmentObject var animalData: AnimalData
     @State var searchText = ""
-    
+//    @State private var showingActivity = false
     
     var body: some View {
         
@@ -26,7 +26,7 @@ struct LeopardLibrary: View {
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
             VStack{
-                Image("newlogo").resizable().padding(.top, -40.0).frame(width:62, height: 18)
+                Image("newlogo").resizable().padding(.top, -40.0).frame(width:40, height: 1)
                 HStack{
 //                    SearchBarView()
                     
@@ -54,7 +54,7 @@ struct LeopardLibrary: View {
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 25)
                         .shadow(
-                            color:(Color("SecondaryButtonColor")), radius:10, x:0.0, y:0.0)
+                            color:(Color("SecondaryTextColor")), radius:10, x:0.0, y:0.0)
                     ).opacity(0.5)
                         .padding()
                 }
@@ -69,30 +69,18 @@ struct LeopardLibrary: View {
                 .clipShape(RoundedRectangle(cornerRadius: 25))
                 .frame(width: 350, height: 80).padding()
                 ScrollView{
-                    
-                    //                    List(animalData.animals, id: \.id){
-                    //                            animal in Text(animal.Name) }
-                    //                        }.scrollContentBackground(.hidden)
-                    //                        .background(Color("BackgroundColor"))
-                    
                     LazyVGrid(columns: [GridItem(.adaptive(minimum:100)), GridItem(.adaptive(minimum:100))], spacing: 20){
                         ForEach(animalData.animals) { animal in
                             if (searchText == ""  || animal.Name.lowercased().contains(searchText.lowercased())) {
                                 VStack{
-    //                                Image("lion").padding()
                                     VStack{
                                         WebImage(url: URL(string: animal.image))
-                                                    .resizable()
-                                                    .aspectRatio(contentMode: .fit)
-                                        
+                                                    .resizable() .frame(width: 100.0, height: 100.0)
+                                                    
                                     }.onAppear {
                                         loadImageFromFirebase(image: animal.image)
                                     }
                                     HStack{
-    //                                    Button(action: IndividualAnimal(name: animal.Name)) {
-    //                                        Text(animal.Name).frame(width: 150, height: 50)
-    //                                    }
-                                        
                                         NavigationLink(
                                             destination: IndividualAnimal(animal: animal)
                                         ){ Text(animal.Name).frame(width: 150, height: 50)}
@@ -101,12 +89,10 @@ struct LeopardLibrary: View {
                                         .clipShape(RoundedRectangle(cornerRadius: 15))
                                 }
                             }
-                            
-                            
-                            
                         }
                         
                     }}
+                .padding(.horizontal, 5.0)
                 Spacer()
             }
         }
@@ -126,12 +112,12 @@ struct LeopardLibrary: View {
         }
     }
 }
-    func goHome() {
-        if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: MasterView())
-            window.makeKeyAndVisible()
-        }
-    }
+//    func goHome() {
+//        if let window = UIApplication.shared.windows.first {
+//            window.rootViewController = UIHostingController(rootView: MasterView())
+//            window.makeKeyAndVisible()
+//        }
+//    }
 
 
 

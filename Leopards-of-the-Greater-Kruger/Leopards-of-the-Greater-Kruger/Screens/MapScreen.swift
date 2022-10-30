@@ -21,16 +21,15 @@ struct MapScreen: View {
     var body: some View {
         
         NavigationView{
-//            Color("BackgroundColor")  .ignoresSafeArea()
             ZStack{
                 Color("BackgroundColor")  .ignoresSafeArea()
                 VStack{
-                    Image("newlogo").resizable().padding(.top, -40.0).frame(width:62, height: 18)
+                   
                     
                     VStack{
                         HStack{
                             Image("libraryiconblack").padding(.leading, 10.0)
-                            Text("ANIMAL LIBRARY").multilineTextAlignment(.leading)
+                            Text("PHOTOGRAPHY TIPS").multilineTextAlignment(.leading)
                                 .frame(width: 200, height: 40).padding()
                         }
                     }
@@ -38,12 +37,7 @@ struct MapScreen: View {
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     .frame(width: 350, height: 80).padding()
                     ScrollView{
-                        
-                        //                    List(animalData.animals, id: \.id){
-                        //                            animal in Text(animal.Name) }
-                        //                        }.scrollContentBackground(.hidden)
-                        //                        .background(Color("BackgroundColor"))
-                        
+               
                         LazyVGrid(columns: [GridItem(.adaptive(minimum:100)), GridItem(.adaptive(minimum:100))], spacing: 20){
                             ForEach(photographyData.tips) { tip in
                                 
@@ -62,7 +56,7 @@ struct MapScreen: View {
                                         
                                     }.onAppear {
                                         loadImageFromFirebase(image: tip.image)
-                                    }
+                                    }.navigationBarBackButtonHidden(true)
                                     HStack{
                                         //   Button(action: goHome) {
                                         //                                            Text(tip.PType).frame(width: 150, height: 50)

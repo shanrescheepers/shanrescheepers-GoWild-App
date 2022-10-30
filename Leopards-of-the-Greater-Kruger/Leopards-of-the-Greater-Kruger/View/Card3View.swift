@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+import AVKit
 struct Card3View: View {
+    @State var audioPlayer: AVAudioPlayer!
     @State private var path = NavigationPath()
     @AppStorage("onboardingComplete") var onboardingComplete =  false
         var body: some View {
@@ -44,9 +45,9 @@ struct Card3View: View {
         }
     func goHome() {
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: MasterView())
+            window.rootViewController = UIHostingController(rootView: MasterView(audioPlayer: $audioPlayer))
             window.makeKeyAndVisible()
-            onboardingComplete = true
+            onboardingComplete = false
         }
     }
 }
