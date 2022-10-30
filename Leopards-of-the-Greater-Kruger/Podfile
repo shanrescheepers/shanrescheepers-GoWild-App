@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Leopards-of-the-Greater-Kruger' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Leopards-of-the-Greater-Kruger
+  pod ‘SDWebImageSwiftUI’
+  pod ‘FirebaseStorage’
+  pod ‘FirebaseAnalytics’
+  pod ‘FirebaseFirestore’
+  pod ‘FirebaseDatabaseSwift’
+  pod ‘Firebase’
+  pod ‘FirebaseFunctions’
+  pod 'FirebaseCore'  
+  pod ‘FirebaseStorageInternal’
+  
+end

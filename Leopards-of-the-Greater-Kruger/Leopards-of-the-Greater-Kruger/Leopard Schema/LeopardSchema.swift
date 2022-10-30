@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+import Firebase
+import FirebaseDatabase
+import FirebaseCoreExtension
 struct LeopardSchema: Identifiable {
     var id : String
     var name : String

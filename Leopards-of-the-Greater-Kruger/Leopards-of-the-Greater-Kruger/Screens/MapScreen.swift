@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+import Firebase
+import FirebaseDatabase
+import FirebaseCoreExtension
 struct MapScreen: View {
     var body: some View {
         Text("map")

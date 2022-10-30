@@ -5,9 +5,11 @@
 //  Created by Mac on 2022/10/16.
 //
 
+
 import SwiftUI
 import Firebase
-
+import FirebaseDatabase
+import FirebaseCoreExtension
 
 struct LeopardLibraryScreen: View {
     @StateObject var animalData = AnimalData()

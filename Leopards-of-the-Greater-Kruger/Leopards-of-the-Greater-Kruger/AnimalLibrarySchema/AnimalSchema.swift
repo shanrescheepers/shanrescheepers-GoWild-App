@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct AnimalSchema: Identifiable {
     var id : String

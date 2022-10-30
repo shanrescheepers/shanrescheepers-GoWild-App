@@ -7,16 +7,19 @@
 
 import SwiftUI
 import Firebase
+import FirebaseCore
 import FirebaseStorage
 import SDWebImageSwiftUI
 struct LeopardLibrary: View {
     
     @State private var imageURL = URL(string: "")
+    @State private var imageName = "lion.png"
     
     @EnvironmentObject var animalData: AnimalData
     
+    
     var body: some View {
-        Text("\(imageURL?.absoluteString ?? "placeholder")").onAppear(perform: loadImageFromFirebase)
+        
         
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
@@ -46,7 +49,15 @@ struct LeopardLibrary: View {
                         ForEach(animalData.animals) { animal in
                             
                             VStack{
-                                Image("lion").padding()
+//                                Image("lion").padding()
+                                VStack{
+                                    WebImage(url: URL(string: animal.image))
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                    
+                                }.onAppear {
+                                    loadImageFromFirebase(image: animal.image)
+                                }
                                 HStack{
                                     Button(action: goHome) {
                                         Text(animal.Name).frame(width: 150, height: 50)
@@ -61,14 +72,18 @@ struct LeopardLibrary: View {
             }
         }
     }
-    func loadImageFromFirebase() {
-        let storageRef = Storage.storage().reference(withPath: "lion.png")
+
+    
+    func loadImageFromFirebase(image: String) -> Void{
+        let storageRef = Storage.storage().reference(withPath: image)
         storageRef.downloadURL { (url, error) in
             if error != nil {
                 print((error?.localizedDescription)!)
                 return
             }
             self.imageURL = url!
+    
+            
         }
     }
 }

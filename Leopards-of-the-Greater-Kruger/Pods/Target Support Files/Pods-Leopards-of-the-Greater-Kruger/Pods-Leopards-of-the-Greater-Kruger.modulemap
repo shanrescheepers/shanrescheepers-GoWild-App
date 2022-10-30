@@ -1,0 +1,6 @@
+framework module Pods_Leopards_of_the_Greater_Kruger {
+  umbrella header "Pods-Leopards-of-the-Greater-Kruger-umbrella.h"
+
+  export *
+  module * { export * }
+}

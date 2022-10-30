@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,13 +12,6 @@
 		0450971428F49966005E78E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450971328F49966005E78E0 /* Assets.xcassets */; };
 		0450971728F49966005E78E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450971628F49966005E78E0 /* Preview Assets.xcassets */; };
 		0450971E28F4ABB1005E78E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0450971D28F4ABB1005E78E0 /* GoogleService-Info.plist */; };
-		0450972128F4B0A4005E78E0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972028F4B0A4005E78E0 /* FirebaseAnalytics */; };
-		0450972328F4B0A4005E78E0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972228F4B0A4005E78E0 /* FirebaseAnalyticsSwift */; };
-		0450972528F4B0A4005E78E0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972428F4B0A4005E78E0 /* FirebaseDatabase */; };
-		0450972728F4B0A4005E78E0 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972628F4B0A4005E78E0 /* FirebaseDatabaseSwift */; };
-		0450972928F4B0A4005E78E0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972828F4B0A4005E78E0 /* FirebaseFirestoreSwift */; };
-		0450972B28F4B0A4005E78E0 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972A28F4B0A4005E78E0 /* FirebaseFunctions */; };
-		0450972D28F4B0A4005E78E0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0450972C28F4B0A4005E78E0 /* FirebaseStorage */; };
 		045DE8F828F5B22A004F54F1 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE8F728F5B22A004F54F1 /* SplashScreenView.swift */; };
 		045DE90228F5F294004F54F1 /* Card1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90128F5F294004F54F1 /* Card1View.swift */; };
 		045DE90428F5F2A3004F54F1 /* Card2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DE90328F5F2A3004F54F1 /* Card2View.swift */; };
@@ -39,6 +32,7 @@
 		04EBE6BA28FB8A7400081076 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6B928FB8A7400081076 /* MapScreen.swift */; };
 		04EBE6BC28FB8AA700081076 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6BB28FB8AA700081076 /* SettingsScreen.swift */; };
 		04EBE6BE28FB925A00081076 /* LeopardLibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBE6BD28FB925A00081076 /* LeopardLibraryScreen.swift */; };
+		85EB65197169352DFA404156 /* Pods_Leopards_of_the_Greater_Kruger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B52B24CC9FF69D2418B96 /* Pods_Leopards_of_the_Greater_Kruger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +52,7 @@
 		0469E42228F741260045FC73 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0469E42428F787980045FC73 /* LeopardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardLibrary.swift; sourceTree = "<group>"; };
 		0469E42B28F7936D0045FC73 /* IDkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDkitView.swift; sourceTree = "<group>"; };
+		0475AE9C290EDBDD00726D86 /* FirebaseCoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494C2E7290E7C2A00A48A59 /* AnimalSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSchema.swift; sourceTree = "<group>"; };
 		0494C2E9290E7C3C00A48A59 /* PhotographySchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographySchema.swift; sourceTree = "<group>"; };
 		0494C2EB290E829D00A48A59 /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
@@ -69,6 +64,9 @@
 		04EBE6B928FB8A7400081076 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		04EBE6BB28FB8AA700081076 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		04EBE6BD28FB925A00081076 /* LeopardLibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeopardLibraryScreen.swift; sourceTree = "<group>"; };
+		6D5BBEC39CC54BA7006CE031 /* Pods-Leopards-of-the-Greater-Kruger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leopards-of-the-Greater-Kruger.release.xcconfig"; path = "Target Support Files/Pods-Leopards-of-the-Greater-Kruger/Pods-Leopards-of-the-Greater-Kruger.release.xcconfig"; sourceTree = "<group>"; };
+		CA7B52B24CC9FF69D2418B96 /* Pods_Leopards_of_the_Greater_Kruger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leopards_of_the_Greater_Kruger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADD6C0A95C9FB69DD8DCCA1 /* Pods-Leopards-of-the-Greater-Kruger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leopards-of-the-Greater-Kruger.debug.xcconfig"; path = "Target Support Files/Pods-Leopards-of-the-Greater-Kruger/Pods-Leopards-of-the-Greater-Kruger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0450972928F4B0A4005E78E0 /* FirebaseFirestoreSwift in Frameworks */,
-				0450972728F4B0A4005E78E0 /* FirebaseDatabaseSwift in Frameworks */,
-				0450972528F4B0A4005E78E0 /* FirebaseDatabase in Frameworks */,
-				0450972B28F4B0A4005E78E0 /* FirebaseFunctions in Frameworks */,
-				0450972D28F4B0A4005E78E0 /* FirebaseStorage in Frameworks */,
-				0450972328F4B0A4005E78E0 /* FirebaseAnalyticsSwift in Frameworks */,
-				0450972128F4B0A4005E78E0 /* FirebaseAnalytics in Frameworks */,
+				85EB65197169352DFA404156 /* Pods_Leopards_of_the_Greater_Kruger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +87,7 @@
 				0450970E28F49964005E78E0 /* Leopards-of-the-Greater-Kruger */,
 				0450970D28F49964005E78E0 /* Products */,
 				0450973328F5937E005E78E0 /* Frameworks */,
+				0D773431FC7E2FECCD6C2F14 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +130,8 @@
 		0450973328F5937E005E78E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0475AE9C290EDBDD00726D86 /* FirebaseCoreExtension.framework */,
+				CA7B52B24CC9FF69D2418B96 /* Pods_Leopards_of_the_Greater_Kruger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +213,15 @@
 			path = "Leopard Schema";
 			sourceTree = "<group>";
 		};
+		0D773431FC7E2FECCD6C2F14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DADD6C0A95C9FB69DD8DCCA1 /* Pods-Leopards-of-the-Greater-Kruger.debug.xcconfig */,
+				6D5BBEC39CC54BA7006CE031 /* Pods-Leopards-of-the-Greater-Kruger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0450971A28F49966005E78E0 /* Build configuration list for PBXNativeTarget "Leopards-of-the-Greater-Kruger" */;
 			buildPhases = (
+				D2F1A9532878D7C21E85ADDC /* [CP] Check Pods Manifest.lock */,
 				0450970828F49964005E78E0 /* Sources */,
 				0450970928F49964005E78E0 /* Frameworks */,
 				0450970A28F49964005E78E0 /* Resources */,
+				9B8CDA64D5D89602345037D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,13 +241,6 @@
 			);
 			name = "Leopards-of-the-Greater-Kruger";
 			packageProductDependencies = (
-				0450972028F4B0A4005E78E0 /* FirebaseAnalytics */,
-				0450972228F4B0A4005E78E0 /* FirebaseAnalyticsSwift */,
-				0450972428F4B0A4005E78E0 /* FirebaseDatabase */,
-				0450972628F4B0A4005E78E0 /* FirebaseDatabaseSwift */,
-				0450972828F4B0A4005E78E0 /* FirebaseFirestoreSwift */,
-				0450972A28F4B0A4005E78E0 /* FirebaseFunctions */,
-				0450972C28F4B0A4005E78E0 /* FirebaseStorage */,
 			);
 			productName = "Leopards-of-the-Greater-Kruger";
 			productReference = 0450970C28F49964005E78E0 /* Leopards-of-the-Greater-Kruger.app */;
@@ -263,7 +262,7 @@
 				};
 			};
 			buildConfigurationList = 0450970728F49964005E78E0 /* Build configuration list for PBXProject "Leopards-of-the-Greater-Kruger" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -272,7 +271,6 @@
 			);
 			mainGroup = 0450970328F49964005E78E0;
 			packageReferences = (
-				0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0450970D28F49964005E78E0 /* Products */;
 			projectDirPath = "";
@@ -295,6 +293,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B8CDA64D5D89602345037D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leopards-of-the-Greater-Kruger/Pods-Leopards-of-the-Greater-Kruger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leopards-of-the-Greater-Kruger/Pods-Leopards-of-the-Greater-Kruger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leopards-of-the-Greater-Kruger/Pods-Leopards-of-the-Greater-Kruger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F1A9532878D7C21E85ADDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leopards-of-the-Greater-Kruger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0450970828F49964005E78E0 /* Sources */ = {
@@ -445,6 +485,7 @@
 		};
 		0450971B28F49966005E78E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DADD6C0A95C9FB69DD8DCCA1 /* Pods-Leopards-of-the-Greater-Kruger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +498,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Leopards-of-the-Greater-Kruger/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GoWild;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -476,6 +518,7 @@
 		};
 		0450971C28F49966005E78E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5BBEC39CC54BA7006CE031 /* Pods-Leopards-of-the-Greater-Kruger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +531,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Leopards-of-the-Greater-Kruger/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GoWild;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -527,55 +571,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0450972028F4B0A4005E78E0 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		0450972228F4B0A4005E78E0 /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
-		0450972428F4B0A4005E78E0 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		0450972628F4B0A4005E78E0 /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
-		0450972828F4B0A4005E78E0 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		0450972A28F4B0A4005E78E0 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		0450972C28F4B0A4005E78E0 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0450971F28F4B0A4005E78E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0450970428F49964005E78E0 /* Project object */;
 }
