@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MasterView: View {
 //    @StateObject var leopardData = LeopardData()
+    @StateObject var photoData = PhotographyData()
     var body: some View {
         
         
@@ -23,7 +24,7 @@ struct MasterView: View {
                     Image("libraryicon")
                     Text("Animal Library")
                 }
-            MapScreen()
+            MapScreen().environmentObject(photoData)
                 .tabItem{
                     Image("photographyicon")
                     Text("Camera Tips")

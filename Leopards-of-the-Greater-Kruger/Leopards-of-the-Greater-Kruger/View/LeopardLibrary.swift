@@ -14,8 +14,10 @@ struct LeopardLibrary: View {
     
     @State private var imageURL = URL(string: "")
     @State private var imageName = "lion.png"
+    @State private var goesToIndividual: Bool = false
     
     @EnvironmentObject var animalData: AnimalData
+    @State var searchText = ""
     
     
     var body: some View {
@@ -26,7 +28,35 @@ struct LeopardLibrary: View {
             VStack{
                 Image("newlogo").resizable().padding(.top, -40.0).frame(width:62, height: 18)
                 HStack{
-                    SearchBarView()
+//                    SearchBarView()
+                    
+                    HStack{
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(
+                                searchText.isEmpty ? (Color.white) : (Color.white)
+                            )
+                        TextField("Search Animal...", text: $searchText)
+                            .foregroundColor(Color(.white))
+                            .overlay(
+                                Image(systemName: "xmark.circle.fill")
+                                    .padding()
+                                    .offset(x: 10)
+                                    .foregroundColor(Color(.white))
+                                    .opacity(searchText.isEmpty ? 0.0 : 1.0)
+                                
+                                    .onTapGesture {
+                                        searchText = ""
+                                    }.accentColor(.white)
+                                ,alignment: .trailing
+                            )
+                    }.accentColor(.white).foregroundColor(.white)
+                    .font(.headline)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 25)
+                        .shadow(
+                            color:(Color("SecondaryButtonColor")), radius:10, x:0.0, y:0.0)
+                    ).opacity(0.5)
+                        .padding()
                 }
                 VStack{
                     HStack{
@@ -47,24 +77,33 @@ struct LeopardLibrary: View {
                     
                     LazyVGrid(columns: [GridItem(.adaptive(minimum:100)), GridItem(.adaptive(minimum:100))], spacing: 20){
                         ForEach(animalData.animals) { animal in
-                            
-                            VStack{
-//                                Image("lion").padding()
+                            if (searchText == ""  || animal.Name.lowercased().contains(searchText.lowercased())) {
                                 VStack{
-                                    WebImage(url: URL(string: animal.image))
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                    
-                                }.onAppear {
-                                    loadImageFromFirebase(image: animal.image)
-                                }
-                                HStack{
-                                    Button(action: goHome) {
-                                        Text(animal.Name).frame(width: 150, height: 50)
+    //                                Image("lion").padding()
+                                    VStack{
+                                        WebImage(url: URL(string: animal.image))
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                        
+                                    }.onAppear {
+                                        loadImageFromFirebase(image: animal.image)
                                     }
-                                }.background(Color("MainButtonColor"))
-                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    HStack{
+    //                                    Button(action: IndividualAnimal(name: animal.Name)) {
+    //                                        Text(animal.Name).frame(width: 150, height: 50)
+    //                                    }
+                                        
+                                        NavigationLink(
+                                            destination: IndividualAnimal(animal: animal)
+                                        ){ Text(animal.Name).frame(width: 150, height: 50)}
+                                        
+                                    }.background(Color("MainButtonColor"))
+                                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                                }
                             }
+                            
+                            
+                            
                         }
                         
                     }}

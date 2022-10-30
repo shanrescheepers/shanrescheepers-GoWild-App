@@ -15,10 +15,11 @@ struct LeopardLibraryScreen: View {
     @StateObject var animalData = AnimalData()
     
     var body: some View {
-
-        ZStack{
-            Color("BackgroundColor")  .ignoresSafeArea()
-            LeopardLibrary().environmentObject(animalData).padding(.top, 43.0)
+        NavigationView{
+            ZStack{
+                Color("BackgroundColor")  .ignoresSafeArea()
+                LeopardLibrary().environmentObject(animalData).padding(.top, 43.0)
+            }
         }
     }
 }

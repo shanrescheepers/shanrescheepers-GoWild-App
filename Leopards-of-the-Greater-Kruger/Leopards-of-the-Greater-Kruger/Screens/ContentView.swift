@@ -7,21 +7,31 @@
 
 import SwiftUI //core functionality to build swift frontend
 import Firebase
+import AVKit
 //appstorage
 //firebase storage - make api call - map data you need
 //n view is n fragment wat jy in n screen kan sit
 struct ContentView: View {
     
     @AppStorage("onboardingComplete") var onboardingComplete =  false
-
+    @State var audioPlayer: AVAudioPlayer!
+    @AppStorage("music") var music =  false
     var body: some View {
 //        stack is like a div to wrap content in
 //        cmnd shift l shortcut for library
         
        
         if(onboardingComplete){
-            MasterView()
-      
+            MasterView().onAppear {
+                            let sound = Bundle.main.path(forResource: "africa", ofType: "mp3")
+                            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                if music{
+                    self.audioPlayer.play()
+                }else{
+                    self.audioPlayer.pause()
+                }
+                        }
+          
         } else {
             ZStack{
                 Color("BackgroundColor")  .ignoresSafeArea()

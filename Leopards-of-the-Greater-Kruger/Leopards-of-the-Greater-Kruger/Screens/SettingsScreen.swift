@@ -11,9 +11,16 @@ import SwiftUI
 import Firebase
 import FirebaseDatabase
 import FirebaseCoreExtension
+import AVKit
+
 struct SettingsScreen: View {
+    @State var audioPlayer: AVAudioPlayer!
+    @AppStorage("music") var music =  false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+        }
     }
 }
 

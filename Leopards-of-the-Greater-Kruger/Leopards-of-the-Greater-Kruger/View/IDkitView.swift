@@ -6,33 +6,56 @@
 //
 
 import SwiftUI
+import MapKit
+//THIS IS THE MAP/Habitat Map SCREEN!!
 
+struct Location: Identifiable {
+    let id = UUID()
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+}
+
+
+    
 struct IDkitView: View {
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -25.3550785797, longitude: 31.8894281089), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5))
+
+    let locations = [
+        Location(name: "Timbavati Private Nature Reserve", coordinate: CLLocationCoordinate2D(latitude: -24.4073, longitude: 31.3144)),
+        Location(name: "The Klaserie Private Nature Reserve", coordinate: CLLocationCoordinate2D(latitude: -24.2564, longitude: 31.2168)),
+        Location(name: "Sabie Sand Private Nature Reserve", coordinate: CLLocationCoordinate2D(latitude: -24.9654, longitude: 31.4399)),
+        Location(name: "andBeyond Ngala Private Game Reserve", coordinate: CLLocationCoordinate2D(latitude: -24.3860, longitude: 31.3327)),
+        Location(name: "Khaya Ndlovu Private Manor House", coordinate: CLLocationCoordinate2D(latitude: -24.369999999333334, longitude: 30.97055555488889)),
+    ]
+    
     var body: some View  {
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
             VStack{
-                Image("logopng").resizable().padding(.top, -50.0).frame(width:62, height: 15)
+                Image("newlogo").resizable().padding(.top, -50.0).frame(width:62, height: 15)
                 Spacer()
                 VStack{
                     VStack{
-                        Button(action: goHome){
-                            Text("Back Home").frame(width: 200, height: 50, alignment: .center)
+                        Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
+                            MapMarker(coordinate: location.coordinate)
+                          
                         }
-                        .background(Color("SecondaryButtonColor"))
-                        .foregroundColor(Color("SecondaryTextColor"))
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                        HStack{
+                            Button("Zoom In") {
+                                mapRegion.span.latitudeDelta *= 0.9
+                                mapRegion.span.longitudeDelta *= 0.9
+                            }.foregroundColor(Color(.black)).padding()
+                            Button("Zoom Out") {
+                                mapRegion.span.latitudeDelta += 0.9
+                                mapRegion.span.longitudeDelta += 0.9
+                            }.foregroundColor(Color(.black))
+                        }
                     }.padding(.vertical, 4.0)
                 }
             }
         }
     }
-    func goHome() {
-        if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView: HomeView())
-            window.makeKeyAndVisible()
-        }
-    }
+   
 }
 
 

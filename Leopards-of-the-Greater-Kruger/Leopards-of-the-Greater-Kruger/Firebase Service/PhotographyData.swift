@@ -22,7 +22,7 @@ class PhotographyData: ObservableObject {
                 for document in snapshot.documents {
                     let data = document.data()
                     
-                    let id = data["id"] as? String ?? ""
+                    let id = data["PType"] as? String ?? ""
                     let Aperture = data["Aperture"] as? String ?? ""
                     let DM = data["DM"] as? String ?? ""
                     let EM = data["EM"] as? String ?? ""

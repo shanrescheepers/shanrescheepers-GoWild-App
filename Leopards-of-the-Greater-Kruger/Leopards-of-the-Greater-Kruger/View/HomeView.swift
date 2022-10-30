@@ -11,6 +11,7 @@ import Firebase
 struct HomeView: View {
     
     @StateObject var animalData = AnimalData()
+    @StateObject var photoData = PhotographyData()
     @State private var path = NavigationPath()
     @State var searchText = ""
     @State var isLinkActive = false
@@ -44,7 +45,7 @@ struct HomeView: View {
                 }
                 VStack{
                     NavigationLink{
-                        IDkitView()
+                        MapScreen().environmentObject(photoData)
                     }label: {
                         VStack{
                             VStack{
