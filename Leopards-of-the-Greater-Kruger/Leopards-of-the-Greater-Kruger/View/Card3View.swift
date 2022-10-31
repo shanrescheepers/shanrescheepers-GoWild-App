@@ -16,15 +16,17 @@ struct Card3View: View {
                     VStack(alignment: .center){
                         ZStack{
                             Spacer()
-                            Image("identification 1").resizable().aspectRatio(contentMode: .fit)
+                            Image("identification 1").resizable().aspectRatio(contentMode: .fit).padding(.bottom, 40.0)
                         }.padding(.top, 20).padding(.horizontal, 5.0).padding(.leading, 4.0)//zstack
                         Button(action: {
                             //doa ction
                             print("Identification Pressed")
                             
                         }) {
-                            Text("DIY IDENTIFICATION").frame(width: 200, height: 50, alignment: .center)
+                            Text("ANIMAL PHOTOGRAPHY TIPS TO FOLLOW ON YOUR SAFARI").padding(.bottom, 6.0).frame(width: 300, height: 80, alignment: .center).fixedSize(horizontal: false, vertical: true).font(.headline)
                         }
+                        .padding(.bottom, 7.0)
+                        
                         .background(Color("SecondaryButtonColor"))
                         .foregroundColor(Color("SecondaryTextColor"))
                         .clipShape(RoundedRectangle(cornerRadius: 15))

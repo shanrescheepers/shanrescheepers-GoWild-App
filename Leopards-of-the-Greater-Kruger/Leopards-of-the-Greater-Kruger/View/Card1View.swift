@@ -22,11 +22,11 @@ struct Card1View: View {
                         print("SASEKA PRESSED")
                         
                     }) {
-                        Text("SASEKA").frame(width: 200, height: 50, alignment: .center)
+                        Text("Learn more about our library of iconic animals to be found on your safaris!").frame(width: 300, height: 100, alignment: .center).fixedSize(horizontal: false, vertical: true).font(.headline)
                     }
                     .background(Color("SecondaryButtonColor"))
                     .foregroundColor(Color("SecondaryTextColor"))
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                    .clipShape(RoundedRectangle(cornerRadius: 15)).padding(.top, 20.0)
 //                    Button("SASEKA"){
 //                        print("Button tapped")
 //                    }.background(Color("SecondaryButtonColor")).padding(4).clipShape(RoundedRectangle(cornerRadius: 15)).foregroundColor(Color("SecondaryTextColor"))

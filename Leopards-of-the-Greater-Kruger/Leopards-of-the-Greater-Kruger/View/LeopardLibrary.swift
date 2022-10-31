@@ -26,9 +26,8 @@ struct LeopardLibrary: View {
         ZStack{
             Color("BackgroundColor")  .ignoresSafeArea()
             VStack{
-                Image("newlogo").resizable().padding(.top, -40.0).frame(width:40, height: 1)
+                Text("Quick Tip: Search for an African Mammal below").font(.subheadline).fontWeight(.black).multilineTextAlignment(.center).padding()
                 HStack{
-//                    SearchBarView()
                     
                     HStack{
                         Image(systemName: "magnifyingglass")

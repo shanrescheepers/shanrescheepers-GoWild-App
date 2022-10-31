@@ -5,7 +5,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>
-		<string>Splash</string>
+		<string>SplashScreen</string>
 	</dict>
 </dict>
 </plist>

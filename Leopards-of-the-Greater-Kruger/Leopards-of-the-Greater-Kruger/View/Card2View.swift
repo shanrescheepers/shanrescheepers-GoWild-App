@@ -13,12 +13,12 @@ struct Card2View: View {
         Spacer()
             VStack(alignment: .center){
                 ZStack{
-                    Image("map").resizable().aspectRatio(contentMode:.fit)
+                    Image("map").resizable().aspectRatio(contentMode:.fit).padding(.bottom, 40.0).frame(width: 400.0, height: 390.0)
                 }.padding(.horizontal, 5.0)//zstack
                 Button(action:{
                     print("Map Pressed")
                 }){
-                    Text("LOCATION MAP").frame(width: 200, height:50, alignment: .center)
+                    Text("HABITAT MAP : Use our location map and featured pin locations to find these african animals.").frame(width: 300, height: 100, alignment: .center).fixedSize(horizontal: false, vertical: true).font(.headline)
                 }
                 .background(Color("SecondaryButtonColor"))
                 .foregroundColor(Color("SecondaryTextColor"))

@@ -12,7 +12,7 @@ struct OnboardingViewScreens123: View {
     @AppStorage("onboardingComplete") var onboardingComplete = false
     var body: some View {
         VStack{
-            Image("logopng").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
+            Image("newlogo").resizable().frame(width:32, height: 32).padding(.horizontal, 9.0)
             TabView{
                 Card1View()
                 Card2View()
