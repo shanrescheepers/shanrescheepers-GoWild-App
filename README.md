@@ -1,2 +1,2 @@
-# shanrescheepers/Leopards-of-the-Greater-Kruger-App
- shanrescheepers/Leopards-of-the-Greater-Kruger iOs App
+# shanrescheepers/GoWild African Safari Wildlife Guide
+ shanrescheepers/GoWild iOS App 2022 
