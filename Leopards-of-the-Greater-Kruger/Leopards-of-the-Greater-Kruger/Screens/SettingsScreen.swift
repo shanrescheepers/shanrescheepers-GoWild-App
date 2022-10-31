@@ -47,7 +47,7 @@ struct SettingsScreen: View {
                         .padding(.bottom, 8.0)
                         VStack{
                             HStack{
-                                Text("[Click Here for the Github Link](https://github.com/shanrescheepers/LeopardsoftheGreaterKruger)").font(.caption).foregroundColor(Color("NavIcon")).padding(.leading, 15.0)
+                                Text("[Click Here for the Github Link](https://github.com/shanrescheepers/shanrescheepers-GoWild-App)").font(.caption).foregroundColor(Color("NavIcon")).padding(.leading, 15.0)
                                 Spacer()
                                 Text("Version 1.0")
                                     .multilineTextAlignment(.trailing).font(.caption).padding(.trailing, 15.0)
